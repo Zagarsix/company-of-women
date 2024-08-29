@@ -1629,6 +1629,11 @@ section,
 /*--------------------------------------------------------------
 # Team Section
 --------------------------------------------------------------*/
+#logoTeam {
+width: 50px;
+height: 60px;
+}
+
 .team .team-member {
   background-color: var(--surface-color);
   overflow: hidden;
