@@ -45,10 +45,10 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html#hero" class="active">Inicio<br></a></li>
+          <li><a href="index.html#hero">Inicio<br></a></li>
           <li><a href="index.html#about">Quiénes somos</a></li>
-          <li class="dropdown"><a href="predicaciones.html"><span>Predicaciones</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="predicaciones.html" class="active"><span>Predicaciones</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="predicacion-detalle-1.html">El comienzo de la transformación del creyente</a>
               </li>
@@ -60,8 +60,8 @@
             </ul>
           </li>
 
-          <li class="dropdown"><a href="estudios.html"><span>Estudios</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="estudios.html"><span>Estudios</span>
+              <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="estudio-detalle-1.html">¿Qué es Dunamis?</a>
               </li>
@@ -72,12 +72,12 @@
             </ul>
           </li>
 
-          <li class="dropdown"><a href="lecciones.html"><span>Lecciones</span> <i
-                class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="lecciones.html">Lecciones</a>
+            <!-- <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="leccion-detalle-1.html">La Iglesia: el diseño establecido por Dios</a>
-              </li>
-              <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> 
+              <li><a href="lecciones.html#leccion-1">La Iglesia: el diseño establecido por Dios</a>
+              </li> -->
+            <!-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> 
                 <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="#">Deep Dropdown 1</a></li>
@@ -88,10 +88,10 @@
                 </ul>
               </li> -->
 
-              <li><a href="leccion-detalle-2.html">Autoridad Espiritual I</a></li>
-              <li><a href="leccion-detalle-3.html">Autoridad Espiritual II</a></li>
-              <li><a href="leccion-detalle-4.html">Autoridad Espiritual III</a></li>
-            </ul>
+            <!-- <li><a href="lecciones.html#leccion-2">Autoridad Espiritual I</a></li>
+          <li><a href="lecciones.html#leccion-3">Autoridad Espiritual II</a></li>
+          <li><a href="lecciones.html#leccion-4">Autoridad Espiritual III</a></li>
+        </ul> -->
           </li>
           <li><a target="_blank" rel="noopener noreferrer"
               href="https://www.youtube.com/@CompaniadeMujeresChile">Podcast</a></li>
@@ -246,10 +246,10 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Enlaces útiles</h4>
+          <h4>Menú</h4>
           <ul>
-            <li><a href="#hero">Inicio</a></li>
-            <li><a href="#about">Quiénes somos</a></li>
+            <li><a href="index.html#hero">Inicio</a></li>
+            <li><a href="index.html#about">Quiénes somos</a></li>
             <li><a href="predicaciones.html">Predicaciones</a></li>
             <li><a href="estudios.html">Estudios</a></li>
             <li><a href="lecciones.html">Lecciones</a></li>
@@ -257,25 +257,38 @@
         </div>
 
         <div class="col-lg-2 col-md-3 footer-links">
-          <h4>Our Services</h4>
+          <h4>Enlaces de interés</h4>
           <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
+            <li><a target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/@CompaniadeMujeresChile">Podcast CdM</a></li>
+            <li><a target="_blank" rel="noopener noreferrer"
+                href="https://www.youtube.com/@iglesiamovilizacioncristia5521">Transmisiones MCA</a></li>
+            <li><a target="_blank" rel="noopener noreferrer"
+                href="https://www.instagram.com/solodiscipulos?igsh=b3l0M3B6ZjBtdjV0">Sólo discípulos</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://www.sbch.cl/sitio/">Sociedad Bíblica
+                Chilena</a></li>
+            <li><a target="_blank" rel="noopener noreferrer" href="https://colegiovirtualalianza.vercel.app/">Colegio
+                Virtual Alianza</a></li>
           </ul>
         </div>
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Únete!</h4>
           <p>Suscríbete y recibe las últimas novedades y próximos eventos de nuestra Compañía de Mujeres!</p>
-          <form action="forms/newsletter.php" method="post" class="php-email-form">
-            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Suscribirse">
+          <form id="form-subscription" action="https://formsubmit.co/companiademujereschile@gmail.com" method="post"
+            class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email" autocomplete="off"><input type="submit"
+                value="Suscribirse">
             </div>
             <div class="loading">Cargando</div>
             <div class="error-message"></div>
             <div class="sent-message">Tu solicitud de suscripción ha sido enviada. Gracias!</div>
+            <input type="hidden" name="_next" value="https://www.companiademujeres.cl/index.html" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_subject" value="Bienvenida a la Compañía de Mujeres" />
+            <input type="hidden" name="_autoresponse"
+              value="Agradecemos tu interés en Compañía de Mujeres. Nos comunicaremos contigo lo antes posible y te estaremos informando de nuestros próximos eventos. ¡Que el Señor te bendiga grandemente!" />
+            <input type="hidden" name="_cc" value="superprofevirtual.adm@gmail.com" />
           </form>
         </div>
 
