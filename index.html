@@ -653,8 +653,8 @@
           </div>
 
           <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up"
-              data-aos-delay="500">
+            <form id="form-contact" action="https://formsubmit.co/companiademujereschile@gmail.com" method="post"
+              class="php-email-form" data-aos="fade-up" data-aos-delay="500">
               <div class="row gy-4">
 
                 <div class="col-md-6">
@@ -678,11 +678,15 @@
                   <div class="loading">Cargando</div>
                   <div class="error-message"></div>
                   <div class="sent-message">Tu mensaje ha sido enviado. Gracias!</div>
-
                   <button type="submit">Enviar</button>
                 </div>
-
               </div>
+              <input type="hidden" name="_next" value="https://www.companiademujeres.cl/index.html" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_subject" value="Bienvenida a la Compañía de Mujeres" />
+              <input type="hidden" name="_autoresponse"
+                value="Agradecemos tu interés en Compañía de Mujeres. Nos comunicaremos contigo lo antes posible. ¡Que el Señor te bendiga grandemente!" />
+              <input type="hidden" name="_cc" value="superprofevirtual.adm@gmail.com" />
             </form>
           </div><!-- End Contact Form -->
 
